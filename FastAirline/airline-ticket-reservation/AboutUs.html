@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 44.3%;
+  margin-bottom: 15px;
+  padding: 0 9px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 60px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p> We are the FATS(Fast Airline Ticket System) developers tasked with creating a fast
+      and reliable ticket system for buisness and vacation customers. The Fast Airline 
+	  Ticket System Application is a highly demanded application in airline industry. 
+	  When designing our applications with the user in mind with ease of use to book a flight 
+	  from Chattanooga to another destination without the hassle of going through too many screens. 
+  </p>
+
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Jon Hyatt.jpeg" alt="Jon Hyatt" style="width:20%">
+      <div class="container">
+        <h2>Jon Hyatt</h2>
+        <p class="title">Developer</p>
+        <p>Product Backlog, Requirements Specification.</p>
+        <p>jon@utc.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Cristian.jpeg" alt="Cristian Rudas" style="width:19%">
+      <div class="container">
+        <h2>Cristian Rudas</h2>
+        <p class="title">Developer</p>
+        <p>Database creation,PHP, Front end UI.</p>
+        <p>Cristian@utc.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Jay Patel.jpeg" alt="Jay Patel" style="width:15%">
+      <div class="container">
+        <h2>Jay Patel</h2>
+        <p class="title">Developer</p>
+        <p>UML Diagrams, Web Interface, QA tester</p>
+        <p>Jay@utc.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/mitch.jpeg" alt="Mitch Prewitt" style="width:24%">
+      <div class="container">
+        <h2>Mitch Prewitt</h2>
+        <p class="title">Developer</p>
+        <p>Front End Development, System Architecture.</p>
+        <p>Mitch@utc.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form>
+  <input type="button" value="Go back to FATS home page" onclick="history.back()" padding: 5px 10px; >
+
+ </form>
